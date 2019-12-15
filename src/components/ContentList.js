@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentListItem from './ContentListItem';
 import generateId from '../Helpers/generateId';
+import animateMenu from '../Helpers/animateMenu';
 
 export default function() {
 
@@ -20,7 +21,11 @@ export default function() {
   ]
   const contents = dataList.map(content => {
     return (
-      < ContentListItem name={content.name} key={generateId(8)}/>
+      < ContentListItem
+        name={content.name}
+        key={generateId(8)}
+        animateMenu={animateMenu}
+      />
     )
   })
   return (
