@@ -8,15 +8,12 @@ export default function() {
   const dataList = [
     {
       name: "Contact",
-      menu: "top"
     },
     {
       name: "Projects",
-      menu: "top"
     },
     {
       name: "Posts",
-      menu: "top"
     }
   ]
   const contents = dataList.map(content => {

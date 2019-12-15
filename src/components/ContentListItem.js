@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/contentListItem.scss'
+import '../styles/contentListItem.scss';
+// import classNames from 'classnames';
 
 export default function({ name, animateMenu }) {
   return (
