@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContentListItem from './ContentListItem';
 import generateId from '../Helpers/generateId';
 import animateMenu from '../Helpers/animateMenu';
 
 export default function() {
-
-  const dataList = [
+  const [menuList, setMenuList] = useState([
     {
       name: "Contact",
     },
@@ -15,13 +14,26 @@ export default function() {
     {
       name: "Posts",
     }
-  ]
-  const contents = dataList.map(content => {
+  ])
+
+  // const dataList = [
+  //   {
+  //     name: "Contact",
+  //   },
+  //   {
+  //     name: "Projects",
+  //   },
+  //   {
+  //     name: "Posts",
+  //   }
+  // ]
+  const contents = menuList.map(content => {
     return (
       < ContentListItem
         name={content.name}
         key={generateId(8)}
         animateMenu={animateMenu}
+        setMenuList={setMenuList}
       />
     )
   })
