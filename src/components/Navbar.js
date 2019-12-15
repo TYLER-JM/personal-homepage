@@ -5,9 +5,9 @@ export default function() {
   return (
     <nav>
       <ul>
-        <li>Contact</li>
-        <li>Projects</li>
-        <li>Posts</li>
+        <li>Theme 1</li>
+        <li>Theme 2</li>
+        <li>Theme 3</li>
       </ul>
     </nav>
   )
