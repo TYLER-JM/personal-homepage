@@ -1,7 +1,8 @@
 import React from 'react';
+import '../styles/contentListItem.scss'
 
 export default function({ name }) {
   return (
-    <p>{name}</p>
+    <div className="content-item"><p>{name}</p></div>
   )
 }

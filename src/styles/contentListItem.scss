@@ -1,0 +1,17 @@
+div.content-item {
+  height: 4em;
+  width: 10em;
+  margin: 1em;
+  border-radius: 10px;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    height: max-content;
+    margin: 0;
+  }  
+}
+div.content-item:hover {
+  cursor: pointer;
+}
