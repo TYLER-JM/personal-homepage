@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/contentListItem.scss';
-// import classNames from 'classnames';
+import classNames from 'classnames';
 
 export default function({ name, animateMenu, setMenuList }) {
   const projectMenu = [
@@ -15,7 +15,7 @@ export default function({ name, animateMenu, setMenuList }) {
     }
   ]
   return (
-    // <div className="content-item" onClick={(e) => animateMenu(e)}><p>{name}</p></div>
-    <div className="content-item" onClick={(e) => setMenuList(projectMenu)}><p>{name}</p></div>
+    <div className={classNames("content-item", {rotated: true})} onClick={(e) => animateMenu(e, setMenuList, projectMenu)}><p>{name}</p></div>
+    // <div className="content-item" onClick={(e) => setMenuList(projectMenu)}><p>{name}</p></div>
   )
 }
