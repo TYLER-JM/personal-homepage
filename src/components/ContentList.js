@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import ContentListItem from './ContentListItem';
 import generateId from '../Helpers/generateId';
 import '../styles/contentList.scss';
+// import '../styles/contentListItem.scss';
 
 export default function() {
   const [menuShown, setMenuShown] = useState("top")
+
+  let menuToShow = "top"
 
   const topMenuData = [
     {
@@ -35,6 +38,7 @@ export default function() {
         key={generateId(8)}
         setMenuShown={setMenuShown}
         menuShown={menuShown}
+        menuToShow={menuToShow}
         type="top"
       />
     )
@@ -46,16 +50,17 @@ export default function() {
         key={generateId(8)}
         setMenuShown={setMenuShown}
         menuShown={menuShown}
+        menuToShow={menuToShow}
         type="Projects"
       />
     )
   })
   return (
     <div className="menu-container">
-      <div>
+      <div className="top-menu">
         {topMenu}
       </div>
-      <div>
+      <div className="projects-menu">
         {projectsMenu}
       </div>
     </div>
