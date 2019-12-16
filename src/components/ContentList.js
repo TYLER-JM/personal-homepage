@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import ContentListItem from './ContentListItem';
 import generateId from '../Helpers/generateId';
-import animateMenu from '../Helpers/animateMenu';
+import '../styles/contentList.scss';
 
 export default function() {
-  const [menuList, setMenuList] = useState([
+  const [menuShown, setMenuShown] = useState("top")
+
+  const topMenuData = [
     {
       name: "Contact",
     },
@@ -14,32 +16,48 @@ export default function() {
     {
       name: "Posts",
     }
-  ])
-
-  // const dataList = [
-  //   {
-  //     name: "Contact",
-  //   },
-  //   {
-  //     name: "Projects",
-  //   },
-  //   {
-  //     name: "Posts",
-  //   }
-  // ]
-  const contents = menuList.map(content => {
+  ]
+  const projectsMenuData = [
+    {
+      name: "Project 1",
+    },
+    {
+      name: "top",
+    },
+    {
+      name: "Project 3",
+    }
+  ]
+  const topMenu = topMenuData.map(content => {
     return (
       < ContentListItem
         name={content.name}
         key={generateId(8)}
-        animateMenu={animateMenu}
-        setMenuList={setMenuList}
+        setMenuShown={setMenuShown}
+        menuShown={menuShown}
+        type="top"
+      />
+    )
+  })
+  const projectsMenu = projectsMenuData.map(project => {
+    return (
+      <ContentListItem
+        name={project.name}
+        key={generateId(8)}
+        setMenuShown={setMenuShown}
+        menuShown={menuShown}
+        type="Projects"
       />
     )
   })
   return (
-    <div>
-      {contents}
+    <div className="menu-container">
+      <div>
+        {topMenu}
+      </div>
+      <div>
+        {projectsMenu}
+      </div>
     </div>
   )
 }
