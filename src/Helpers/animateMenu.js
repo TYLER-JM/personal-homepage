@@ -1,6 +1,6 @@
-const animateMenu = (event, callback, data) => {
+const animateMenu = (event, callback) => {
   console.log(event.currentTarget.firstChild.innerHTML);
-  callback(data);
+  callback(event.currentTarget.firstChild.innerHTML);
 }
 
 export default animateMenu;
