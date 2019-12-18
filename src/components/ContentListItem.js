@@ -6,7 +6,7 @@ export default function({ name, setMenuShown, menuShown, type, menuToShow }) {
   
   return (
     <div 
-      className={classNames("content-item", {hidden: menuShown !== type})}
+      className={classNames("content-item", {hidden: menuShown !== type, shown: menuShown === type})}
       onClick={(e) => setMenuShown(e.currentTarget.firstChild.innerHTML)}>
       {/* onClick={(e) => menuToShow = e.currentTarget.firstChild.innerHTML}> */}
       <p>{name}</p>
