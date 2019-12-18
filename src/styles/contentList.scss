@@ -3,12 +3,6 @@
   flex-direction: row;
 
   .content-item {
-    opacity: 1;
-    animation-name: show;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-
     border-radius: 0;
     height: 4em;
     width: 10em;
@@ -28,8 +22,17 @@
     cursor: pointer;
   }
   .hidden {
-    opacity: 0.3;
+    // opacity: 0.3;
+    display: none;
     animation-name: hide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+  .shown {
+    opacity: 1;
+    position: relative;
+    animation-name: show;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-play-state: running;
@@ -39,15 +42,18 @@
       opacity: 1;
     }
     100% {
-      opacity: 0.3;
+      opacity: 0.1;
+      display: none;
     }
   }
   @keyframes show {
     0% {
-      opacity: 0.3;
+      opacity: 0;
+      left: 200px;
     }
     100% {
       opacity: 1;
+      left: 0px;
     }
   }
 }
