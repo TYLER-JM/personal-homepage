@@ -1,0 +1,10 @@
+article {
+  grid-area: 2/2/3/3;
+  background-color: rgb(215, 218, 218);
+  color: black;
+  height: 100px;
+  width: 500px;
+}
+article:hover {
+  cursor: pointer;
+}
