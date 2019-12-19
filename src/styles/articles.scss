@@ -15,10 +15,10 @@ article {
     display: grid;
     grid-template: 50% 50% / 38% 37% 25%;
     h2 {
-      grid-area: 1/1/2/2;
+      grid-area: 1/2/2/3;
     }
     .arrow {
-      grid-area: 1/2/2/3;
+      grid-area: 1/1/2/2;
       margin: 20px 0;
       display: flex;
       > div {
