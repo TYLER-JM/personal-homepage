@@ -4,7 +4,7 @@ import generateId from '../Helpers/generateId';
 import '../styles/contentList.scss';
 // import '../styles/contentListItem.scss';
 
-export default function() {
+const ContentList = function() {
   const [menuShown, setMenuShown] = useState("top")
 
   let menuToShow = "top"
@@ -39,7 +39,7 @@ export default function() {
         setMenuShown={setMenuShown}
         menuShown={menuShown}
         menuToShow={menuToShow}
-        type="top"
+        type={["top", "Contact", "Posts"]}
       />
     )
   })
@@ -51,18 +51,20 @@ export default function() {
         setMenuShown={setMenuShown}
         menuShown={menuShown}
         menuToShow={menuToShow}
-        type="Projects"
+        type={["Projects"]}
       />
     )
   })
   return (
-    <div className="menu-container">
+    <nav className="menu-container">
       <div className="top-menu">
         {topMenu}
       </div>
       <div className="projects-menu">
         {projectsMenu}
       </div>
-    </div>
+    </nav>
   )
 }
+
+export default ContentList;
