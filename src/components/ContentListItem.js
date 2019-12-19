@@ -1,16 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
-// import '../styles/contentListItem.scss';
 
-export default function({ name, setMenuShown, menuShown, type, menuToShow }) {
+ const ContentListItem = function({ name, setMenuShown, menuShown, type }) {
   
   return (
     <div 
-      className={classNames("content-item", {hidden: menuShown !== type, shown: menuShown === type})}
+      className={classNames("content-item", {hidden: !type.includes(menuShown), shown: type.includes(menuShown)})}
       onClick={(e) => setMenuShown(e.currentTarget.firstChild.innerHTML)}>
-      {/* onClick={(e) => menuToShow = e.currentTarget.firstChild.innerHTML}> */}
       <p>{name}</p>
     </div>
-    // <div className="content-item" onClick={(e) => setMenuList(projectMenu)}><p>{name}</p></div>
   )
 }
+
+export default ContentListItem;
