@@ -1,18 +1,44 @@
 article {
   transition: all 1s;
   grid-area: 2/2/3/3;
+
+
   background-color: rgb(215, 218, 218);
   color: black;
   height: 100px;
   width: 500px;
   margin: 1em; 
-  .article-content {
-    height: 0;
-    width: 0;
+  .article-header {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-evenly;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    h2 {
+      grid-area: 1/1/2/2;
+    }
+    .arrow {
+      grid-area: 1/2/3/3;
+      background-color: black;
+      margin: 20px 0;
+      height: 50px;
+      width: 50px;
+      transform: skewY(30deg);
+    }
+    .arrow:hover {
+      cursor: pointer;
+    }
+    p {
+      grid-area: 2/1/3/2;
+    }
+
   }
-}
-article:hover {
-  cursor: pointer;
+  .article-content {
+    // height: 0;
+    // width: 0;
+    opacity: 0;
+  }
+
 }
 .selected-article {
   transition: all 1s;
@@ -24,6 +50,7 @@ article:hover {
   .article-content {
     height: 100%;
     width: 80%;
+    opacity: 1;
     margin: 0 auto;
   }
 }
