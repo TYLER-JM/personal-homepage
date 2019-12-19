@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/navbar.scss'
 
-export default function() {
+const Themes = function() {
   return (
-    <nav>
+    <nav className="themes">
       <ul>
         <li>Theme 1</li>
         <li>Theme 2</li>
@@ -12,3 +12,5 @@ export default function() {
     </nav>
   )
 }
+
+export default Themes;
