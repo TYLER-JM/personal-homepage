@@ -31,13 +31,13 @@ const ContentList = function() {
     )
   })
   const linkItems = links.map(link => {
-    return (
-      <LinkItem
-        title={link.title}
-        desc={link.description}
-        url={link.url}
-      />
-    )
+      return (
+        <LinkItem
+          title={link.title}
+          desc={link.description}
+          url={link.url}
+        />
+      )
   })
 
   return (
