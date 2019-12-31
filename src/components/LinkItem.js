@@ -1,13 +1,14 @@
 import React from 'react';
+import '../styles/links.scss';
 
 const LinkItem = function({title, desc, url}) {
   return (
+    <article className="link">
       <a href={url} target="blank">
-      <article>
-        <h2>{title}</h2>
-        <p>{desc}</p>
-      </article>
-    </a>
+      <h2>{title}</h2>
+      <p>{desc}</p>
+      </a>
+    </article>
   )
 }
 
