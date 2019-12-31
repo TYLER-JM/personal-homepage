@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import ContentListItem from './ContentListItem';
 import generateId from '../Helpers/generateId';
 import '../styles/contentList.scss';
-// import '../styles/contentListItem.scss';
+import LinkItem from './LinkItem';
 
 const ContentList = function() {
-  // const [menuShown, setMenuShown] = useState("top")
-  const [links, setLinks] = useState({});
+  const [links, setLinks] = useState([]);
 
 
   const topMenuData = [
@@ -25,27 +24,30 @@ const ContentList = function() {
       < ContentListItem
         name={content.name}
         key={generateId(8)}
+        links={links}
+        setLinks={setLinks}
         type={["top", "Contact", "Posts"]}
       />
     )
   })
-  // const projectsMenu = projectsMenuData.map(project => {
-  //   return (
-  //     <ContentListItem
-  //       name={project.name}
-  //       key={generateId(8)}
-  //       type={["Projects"]}
-  //     />
-  //   )
-  // })
+  const linkItems = links.map(link => {
+    return (
+      <LinkItem
+        title={link.title}
+        desc={link.description}
+        url={link.url}
+      />
+    )
+  })
+
   return (
     <nav className="menu-container">
       <div className="top-menu">
         {topMenu}
       </div>
-      {/* <div className="projects-menu">
-        {projectsMenu}
-      </div> */}
+      <div className="projects-menu">
+        {linkItems}
+      </div>
     </nav>
   )
 }
