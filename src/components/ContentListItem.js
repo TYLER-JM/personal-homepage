@@ -1,12 +1,14 @@
 import React from 'react';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
- const ContentListItem = function({ name, setMenuShown, menuShown, type }) {
+ const ContentListItem = function({ name }) {
   
   return (
     <div 
-      className={classNames("content-item", {hidden: !type.includes(menuShown), shown: type.includes(menuShown)})}
-      onClick={(e) => setMenuShown(e.currentTarget.firstChild.innerHTML)}>
+      className="content-item"
+      // className={classNames("content-item", {hidden: !type.includes(menuShown), showing: type.includes(menuShown)})}
+      // onClick={(e) => setMenuShown(e.currentTarget.firstChild.innerHTML)}
+    >
       <p>{name}</p>
     </div>
   )
