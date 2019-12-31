@@ -22,6 +22,9 @@
   .content-item:hover {
     cursor: pointer;
   }
+  div.top {
+    display: default;
+  }
   .hidden {
     // opacity: 0.3;
     display: none;
@@ -30,7 +33,7 @@
     animation-iteration-count: 1;
     animation-play-state: running;
   }
-  .shown {
+  .showing {
     opacity: 1;
     position: relative;
     animation-name: show;
