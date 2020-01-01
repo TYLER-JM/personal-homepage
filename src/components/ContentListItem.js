@@ -9,7 +9,7 @@ import linksHelper from '../Helpers/linksHelper';
       className="content-item"
       onClick={(e) => setLinks(linksHelper(e))}
     >
-      <p>{name}</p>
+      <span>{name}</span>
     </div>
   )
 }
