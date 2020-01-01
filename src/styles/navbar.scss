@@ -1,6 +1,9 @@
+@import './palette.scss';
+
 .themes {
   grid-area: 1/1/2/3;
   padding: 10px;
+  background: $background;
 }
 ul {
   list-style-type: none;
