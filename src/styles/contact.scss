@@ -1,0 +1,10 @@
+@import './palette.scss';
+
+.contact {
+  height: 100px;
+  width: 100vw;
+  position: relative;
+  top: 1000px;
+  background-color: $highlight;
+  opacity: 0.85;
+}

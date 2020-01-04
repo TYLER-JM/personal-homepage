@@ -2,11 +2,12 @@
 
 .themes {
   display: flex;
+  // position: fixed;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: $background;
-  opacity: 0.7;
+  opacity: 0.85;
   height: 200px;
   img {
     border-radius: 100%;
