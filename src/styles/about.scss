@@ -1,4 +1,11 @@
 .backdrop {
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
+  // overflow: hidden;
+  position: fixed;
+  z-index: -10;
+  img {
+    position: absolute;
+    width: 100%;
+  }
 }
