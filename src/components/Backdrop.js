@@ -1,7 +1,7 @@
 import React from 'react';
-import "../styles/about.scss";
+import "../styles/backdrop.scss";
 
-const About = function() {
+const Backdrop = function() {
   return (
     <div className="backdrop">
       <img src="images/backdrop.jpg" alt="backdrop depiction of me"/>
@@ -9,4 +9,4 @@ const About = function() {
   )
 }
 
-export default About;
+export default Backdrop;

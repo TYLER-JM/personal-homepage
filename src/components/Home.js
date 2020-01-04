@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar'; 
-import About from './About';
+import Backdrop from './Backdrop';
+import Contact from './Contact';
 import '../styles/home.scss';
 // import ContentList from './ContentList';
 // import ArticleListItem from './ArticleListItem';
@@ -8,8 +9,9 @@ import '../styles/home.scss';
 export default function() {
   return (
     <div className="container">
-      <About />
+      <Backdrop />
       <Navbar />
+      <Contact />
       {/* <ContentList /> */}
       {/* <ArticleListItem /> */}
     </div>
