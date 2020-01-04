@@ -3,7 +3,9 @@ import "../styles/about.scss";
 
 const About = function() {
   return (
-    <img src="images/backdrop.jpg" alt="backdrop depiction of me" className="backdrop"/>
+    <div className="backdrop">
+      <img src="images/backdrop.jpg" alt="backdrop depiction of me"/>
+    </div>
   )
 }
 

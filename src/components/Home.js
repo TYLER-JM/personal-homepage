@@ -1,5 +1,5 @@
 import React from 'react';
-import Themes from './Navbar'; 
+import Navbar from './Navbar'; 
 import About from './About';
 import '../styles/home.scss';
 // import ContentList from './ContentList';
@@ -8,8 +8,8 @@ import '../styles/home.scss';
 export default function() {
   return (
     <div className="container">
-      <Themes />
       <About />
+      <Navbar />
       {/* <ContentList /> */}
       {/* <ArticleListItem /> */}
     </div>

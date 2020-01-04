@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/navbar.scss'
 
-const Themes = function() {
+const Navbar = function() {
   return (
     <nav className="themes">
       <img src="images/generic-coding.jpg" alt="generic depiction of coding"></img>
@@ -15,4 +15,4 @@ const Themes = function() {
   )
 }
 
-export default Themes;
+export default Navbar;
