@@ -1,11 +1,37 @@
 @import './palette.scss';
-
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #303641;
+  opacity: 0.85;
+  // height: 12.5em;
+  width: 100vw;
+  .hero {
+    border-radius: 100%;
+    height: 6.25em;
+    width: 6.25em;
+  }
+}
+.big-menu {
+  height: 12.5em;
+  .hero {
+    height: 6.25em;
+  }
+}
+.little-menu {
+  height: 6.25em;
+  .hero {
+    height: 0em
+  }
+}
 ul {
   list-style-type: none;
   padding: 0;
 
   li {
     display: inline-block;
-    // padding: 10px 0;
   }
 }
