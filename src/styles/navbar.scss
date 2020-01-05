@@ -1,20 +1,5 @@
 @import './palette.scss';
 
-.themes {
-  display: flex;
-  // position: fixed;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: $background;
-  opacity: 0.85;
-  height: 200px;
-  img {
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-  }
-}
 ul {
   list-style-type: none;
   padding: 0;
