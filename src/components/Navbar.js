@@ -24,7 +24,7 @@ const Navbar = function() {
   return (
     // <nav className="themes">
     <nav className={classes.menu}>
-      <img className={classes.hero} src="images/generic-coding.jpg" alt="generic depiction of coding"></img>
+      <img className={classes.hero} src="images/logo.png" alt="a logo depicting a guitar player"></img>
       <ul>
         <li>About</li>
         <li>Contact</li>
