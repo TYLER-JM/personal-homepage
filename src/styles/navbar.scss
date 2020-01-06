@@ -1,12 +1,13 @@
 @import './palette.scss';
 .menu {
+  z-index: 10;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #303641;
-  opacity: 0.85;
+  // opacity: 0.85;
   // height: 12.5em;
   padding: 3em 0;
   width: 100vw;
