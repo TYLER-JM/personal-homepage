@@ -1,8 +1,10 @@
 const shrinkNavOnScroll = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    return "12.5em";
+    document.getElementById("menu").style.padding = "1em 0";
+    console.log("we're scrolled down now");
   } else {
-    return "6.25em";
+    document.getElementById("menu").style.padding = "3em 0";
+    console.log("we should be at the top of the page");
   }
 }
 
