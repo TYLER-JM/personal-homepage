@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/navbar.scss';
+
 // import { makeStyles } from '@material-ui/core';
-import classNames from 'classnames';
-// import shrinkNavOnScroll from '../Helpers/shinkNavOnScroll';
 
 
 
@@ -35,13 +34,13 @@ import classNames from 'classnames';
 const Navbar = function() {
   // const classes = useStyles();
 
+ 
   return (
-    // <nav className="menu big-menu">
-    <nav className={classNames("menu", {"big-menu": document.body.scrollTop < 80, "little-menu": document.body.scrollTop > 80})}>
+    <nav className="menu" id="menu">
+    {/* <nav className={classNames("menu", {"big-menu": document.body.scrollTop < 80, "little-menu": document.body.scrollTop > 80})}> */}
       <img className="hero" src="images/logo.png" alt="a logo depicting a guitar player"></img>
       {/* <img className={classes.hero} src="images/logo.png" alt="a logo depicting a guitar player"></img> */}
       <ul>
-        <li>About</li>
         <li>Contact</li>
         <li>Projects</li>
         <li>Posts</li>

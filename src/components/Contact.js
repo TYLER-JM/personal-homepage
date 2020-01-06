@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/contact.scss';
+import '../styles/section.scss';
 
 const Contact = function() {
   return (
-    <div className="contact">
-      here we are
-    </div>
+    <article className="section">
+      Contact section
+    </article>
   )
 }
 
