@@ -6,18 +6,19 @@
   position: relative;
   top: 100vh;
   // padding-top: 235px;
-  margin-top: 235px;
+  // margin-top: 235px;
   opacity: 0.85;
 }
-.contact {
-  background-color: $highlight;
-  color: black;
-}
+
 .projects {
-  text-transform: uppercase;
+  background-color: $highlight;
 }
 .posts {
+  text-transform: uppercase;
+}
+.contact {
   background-color: $background;
+  color: black;
 }
 .footer {
   height: 200px;
