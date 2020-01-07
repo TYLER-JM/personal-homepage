@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Projects from './projects/Projects';
 import Posts from './Posts';
 import Footer from './Footer';
+import About from './About';
 import '../styles/home.scss';
 // import ContentList from './ContentList';
 // import ArticleListItem from './ArticleListItem';
@@ -14,6 +15,7 @@ export default function() {
     <div className="container">
       <Backdrop />
       <Navbar />
+      <About />
       <Projects />
       <Posts />
       <Contact />
