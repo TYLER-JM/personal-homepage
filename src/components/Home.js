@@ -12,8 +12,8 @@ import '../styles/home.scss';
 export default function() {
   return (
     <div className="container">
-      <Backdrop />
       <Navbar />
+      <Backdrop />
       <Contact />
       <Projects />
       <Posts />

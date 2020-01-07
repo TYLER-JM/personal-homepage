@@ -9,12 +9,52 @@
   background: #303641;
   // opacity: 0.85;
   // height: 12.5em;
-  padding: 3em 0;
+  padding: 2em 0;
   width: 100vw;
   .hero {
+    margin: 1em 0 ;
     border-radius: 100%;
     height: 6.25em;
     width: 6.25em;
+  }
+  li {
+    margin: 0 1em;
+  }
+  a {
+    transition: all 280ms ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 0;
+    cursor: pointer;
+    &:hover,&:active {
+      letter-spacing: 5px;      
+    }
+    &:visited {
+      color: white;
+    }
+    &:after,&:before {
+      backface-visibility: hidden;
+      border: 1px solid rgba(#fff, 0);
+      bottom: 0px;
+      content: " ";
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+    &:hover:after,&:hover:before {
+      backface-visibility: hidden;
+      border-color: #fff;
+      transition: width 350ms ease-in-out;
+      width: 100%;
+    }
+    // &:hover:before {
+    //   bottom: auto;
+    //   top: 0;
+    //   width: 70%;
+    // }
   }
 }
 .big-menu {
