@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar'; 
 import Backdrop from './Backdrop';
 import Contact from './Contact';
-import Projects from './Projects';
+import Projects from './projects/Projects';
 import Posts from './Posts';
 import Footer from './Footer';
 import '../styles/home.scss';
@@ -12,11 +12,11 @@ import '../styles/home.scss';
 export default function() {
   return (
     <div className="container">
-      <Navbar />
       <Backdrop />
-      <Contact />
+      <Navbar />
       <Projects />
       <Posts />
+      <Contact />
       <Footer />
       {/* <ContentList /> */}
       {/* <ArticleListItem /> */}

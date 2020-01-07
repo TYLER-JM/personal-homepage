@@ -41,9 +41,9 @@ const Navbar = function() {
       <img className="hero" src="images/logo.png" alt="a logo depicting a guitar player"></img>
       {/* <img className={classes.hero} src="images/logo.png" alt="a logo depicting a guitar player"></img> */}
       <ul>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#posts">Posts</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   )
