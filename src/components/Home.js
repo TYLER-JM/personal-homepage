@@ -3,9 +3,10 @@ import Navbar from './Navbar';
 import Backdrop from './Backdrop';
 import Contact from './Contact';
 import Projects from './projects/Projects';
-import Posts from './Posts';
-import Footer from './Footer';
 import About from './About';
+import Posts from './Posts';
+// import Footer from './Footer';
+// import UC from './UnderConstruction';
 import '../styles/home.scss';
 // import ContentList from './ContentList';
 // import ArticleListItem from './ArticleListItem';
@@ -19,7 +20,7 @@ export default function() {
       <Projects />
       <Posts />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
       {/* <ContentList /> */}
       {/* <ArticleListItem /> */}
     </div>

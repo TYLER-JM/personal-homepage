@@ -1,37 +1,126 @@
 @import './palette.scss';
 
-.section {
-  height: 400px;
-  width: 100vw;
-  position: relative;
-  top: 100vh;
-  // padding-top: 235px;
-  // margin-top: 235px;
-  opacity: 0.85;
+@keyframes slide-letters {
+  0% {
+    letter-spacing: 0px;
+    text-align: right
+  }
+  50% {
+    letter-spacing: 5.2vw;
+    // text-align: center
+  }
+  100% {
+    letter-spacing: 0px;
+    text-align: left;
+  }
 }
 
-.projects {
-  background-color: $highlight;
-  // display: flex;
-  .scroll-me {
-    display: flex;
-    overflow-x: auto;
+.section {
+  height: 26em;
+  width: 100vw;
+  // position: relative;
+  // top: 65%;
+  // padding-top: 235px;
+  // margin-top: 235px;
+  // opacity: 0.85;
+}
+
+.about {
+  background:linear-gradient($background, rgba(255,255,255,0.0));
+  .bio {
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    font-family: 'DM Serif Display', serif;
+  }
+  .name {
+    font-family: 'Kulim Park', sans-serif;
     width: 100%;
-    height: 100%;
+    text-transform: uppercase;
+    // letter-spacing: 0px;
+    animation: 3s ease-in-out 1s 1 running slide-letters;
   }
 }
 
 .posts {
-  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    width: 100vw;
+    font-family: 'Kulim Park', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+  }
+  .post-card {
+    background-color: white;
+    border-radius: 5px;
+    width: 95vw;
+    max-height: 100px;
+    display: flex;
+    padding: 2px;
+    margin: 5px;
+    div {
+      width: 25%;
+      // height: 100%;
+    }
+    div > img {
+      max-height: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
 }
+
+.projects {
+  // background-color: $highlight;
+  opacity: 1;
+  h2 {
+    height: 1em;
+    padding: 0;
+    // margin-bottom: .25em;
+    margin-bottom: 0;
+    z-index: 100;
+  }
+  .scroll-me {
+    z-index: -1;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    height: 24.5em;
+  }
+}
+
 .contact {
-  background-color: $background;
+  // background-color: $background;
+  background-color: white;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-weight: 400;
+  }
 }
 .footer {
+  font-family: 'Kulim Park', sans-serif;
   height: 200px;
   width: 100vw;
   position: relative;
   top: 100vh;
   opacity: 0.85;
+}
+
+@media (min-width: 770px) {
+  .posts {
+    .post-card {
+      width: 50vw;
+    }
+  }
 }

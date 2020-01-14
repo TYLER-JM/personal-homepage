@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/about.scss'
 
 const About = function() {
   return (
-    <div className="under-construction">
-      <img src="images/under-construction.png" alt="under construction"/>
-      <p>this page is under construction</p>
-    </div>
-  )
+    <article className="section about" id="about">
+      <p className="bio">Welcome, I am a full-stack developer, and a Robertson Davies aficionado. I have a perfectly healthy love for board and card games</p>
+      <h1 className="name">Tyler Martin</h1>
+      {/* <p>With bended neck I grope, </p> */}
+      </article>
+  );
 }
 
-export default About;
+export default About

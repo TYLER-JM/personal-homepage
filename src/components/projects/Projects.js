@@ -30,7 +30,7 @@ const Projects = function() {
     {
       title: "Bar Chart",
       tech: "jQuery, HTML, CSS",
-      desc: "An API to generate Bar charts on an web page",
+      desc: "An API to generate bar charts on a web page",
       href: "https://github.com/TYLER-JM/barChart_repo"
     }
   ]
@@ -48,6 +48,7 @@ const Projects = function() {
 
   return (
     <article className="section projects" id="projects">
+      <h2>Projects</h2>
       <div className="scroll-me">
         {/* <ul className="card-list"> */}
           {allProjectCards}
