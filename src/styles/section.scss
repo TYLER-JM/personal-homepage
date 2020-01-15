@@ -30,6 +30,7 @@
 
 .about {
   background:linear-gradient($background, rgba(255,255,255,0.0));
+  margin-bottom: 2em;
   .bio {
     font-size: 2em;
     text-align: right;
@@ -39,7 +40,7 @@
   .name {
     font-family: 'Kulim Park', sans-serif;
     width: 100%;
-
+    margin-bottom: 2em;
     text-transform: uppercase;
     letter-spacing: 20px;
     animation: 3s ease-in-out 1s 1 running slide-letters;
