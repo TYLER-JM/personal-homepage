@@ -1,47 +1,15 @@
-$color1: #5271C2;
-$color2: #35a541;
-$color3: #bdb235;
-$color4: #db6623;
-$color5: #3e5eb3;
-$color6: #aa9e5c;
-
-@mixin easeOut {
-  transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-@function longshadow($color_a,$color_b,$stepnum, $opacity: 1){
-	$gradient_steps: null;
-	@for $i from 1 through $stepnum {
-		$weight: ( ( $i - 1 ) / $stepnum ) * 100;
-		$colour_mix: mix($color_b, rgba($color_a, $opacity), $weight);
-		$seperator: null;
-		@if($i != $stepnum){ 
-			$seperator: #{','}; 
-		}
-		$gradient_steps: append( #{$gradient_steps}, #{$i}px #{$i}px $colour_mix $seperator );
- }
-  @return $gradient_steps;
-}
+@import './palette.scss';
 
 * {
   box-sizing: border-box;
 }
-.card-link {
-  margin: 0;
-  padding: 0 1em;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  opacity: 1;
-  text-align: center;
-    &:visited {
-      color: white;
-      text-transform: uppercase;
-    }
-}
+
+
 .card {
+  background-color: white;
+  color: $background;
+  border-radius: 5px;
   z-index: -1;
-  opacity: 1;
   float: left;
   position: relative;
   width: calc(100% * .3333 + .3333 * 40px);
@@ -49,69 +17,40 @@ $color6: #aa9e5c;
   min-width: 300px;
   // width: 20em;
   height: 24.5em;
-  margin: 0 30px 0 0;
-  perspective: 1000;
-  // &:first-child {
-    .card__front {
-      background: $color1;
-      height: 24.5em;
-    }
-    .card__title {
-      text-shadow: longshadow(darken($color1, 20%),$color1,55, 0.9);
-    }
-  // }
+  margin: 0 15px;
+  // perspective: 1000;
 
-  &__flipper {
-    cursor: pointer;
-    transform-style: preserve-3d;
-    @include easeOut;
-  }
-  
-  &__front,
-  &__back {
-    position: absolute;
-    backface-visibility: hidden;
-    top: 0;
-    left: 0;
+  img {
+    border-radius: 5px 5px 0 0;
+    height: 50%;
     width: 100%;
-    // height: 340px;
-  }
-  
-  &__front {
-    transform: rotateY(0);
-    z-index: 2;
-    overflow: hidden;
-  }
-  
-  &__back {
-    transform: rotateY(180deg) scale(1.1);
-    background: lighten(black, 8);
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 20px rgba(black, 0.3);
-    
-    span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
   
   &__tech {
-    font-size: 3em;
+    font-size: 1em;
     line-height: 0.9;
     font-weight: 700;
-    
-    span {
-      font-size: 14px;
-    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 1em;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1;
+    text-align: center;
+      &:visited {
+        color: white;
+        text-transform: uppercase;
+      }
   }
   
   &__title {
-    font-size: 6em;
+    font-family: 'DM Serif Display', serif;
+    text-transform: capitalize;
+    font-size: 2em;
     margin: 0 8px 0 0;
     font-weight: 700;
     
@@ -125,10 +64,6 @@ $color6: #aa9e5c;
     // height: 290px;
     margin-right: 0;
     float: none;
-    
-    .card__front,
-    .card__back {
-      // height: 290px;
-    }
+ 
   }
 }
