@@ -16,6 +16,8 @@ const ProjectCard = function ({ title, tech, desc, href, src}) {
       // </a>
 
     // <div class="cards__item">
+    <a href={href} className="card__link" target="blank">
+
       <div className="card">
         {/* <div class="card__image card__image--fence"></div> */}
         <img src={`../../../images/${src}`} alt={`project homepage for ${title}`}/>
@@ -23,11 +25,13 @@ const ProjectCard = function ({ title, tech, desc, href, src}) {
           <div className="card__title">{title}</div>
           <p className="card__tech">{tech}</p>
           <p className="card__text">{desc}</p>
-          <a className="card__link" href={href}>More</a>
+          {/* <a className="card__link" href={href} target="blank"><p>more</p></a> */}
           {/* <button class="btn btn--block card__btn"><a href={href}>More</a></button> */}
         </div>
       </div>
-    // </div>
+    </a>
+
+    
   )
 
 }
