@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/navbar.scss';
+import scrollTo from '../Helpers/scollTo';
 
 // import { makeStyles } from '@material-ui/core';
 
@@ -32,18 +33,17 @@ import '../styles/navbar.scss';
 // })
 
 const Navbar = function() {
-  // const classes = useStyles();
-
  
   return (
     <nav className="menu" id="menu">
-    {/* <nav className={classNames("menu", {"big-menu": document.body.scrollTop < 80, "little-menu": document.body.scrollTop > 80})}> */}
       <img className="hero" src="images/logo.png" alt="a logo depicting a guitar player"></img>
-      {/* <img className={classes.hero} src="images/logo.png" alt="a logo depicting a guitar player"></img> */}
       <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#posts">Posts</a></li>
-        <li><a href="#contact">Contact</a></li>
+        {/* <li><a href="#projects">Projects</a></li> */}
+        <li onClick={() => scrollTo(750)}>Projects</li>
+        {/* <li><a href="#posts">Posts</a></li> */}
+        <li onClick={() => scrollTo(1230)}>Posts</li>
+        {/* <li><a href="#contact">Contact</a></li> */}
+        <li onClick={() => scrollTo(1330)}>Contact</li>
       </ul>
     </nav>
   )
