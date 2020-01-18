@@ -18,7 +18,8 @@
     height: 6.25em;
     width: 6.25em;
   }
-  a {
+  // a {
+  li {
     font-family: 'Kulim Park', sans-serif;
     transition: all 280ms ease-in-out;
     text-decoration: none;
@@ -30,9 +31,7 @@
     &:hover,&:active {
       letter-spacing: 5px;      
     }
-    &:visited {
-      color: white;
-    }
+    
     &:after,&:before {
       backface-visibility: hidden;
       border: 1px solid rgba(#fff, 0);
