@@ -27,6 +27,8 @@
   background-color: white;
   color: $background;
   border-radius: 5px;
+  border: 3px solid rgba(255,255,255,.0);
+  transition: all .25s ease-in-out;
   z-index: -1;
   float: left;
   position: relative;
@@ -39,15 +41,24 @@
   // perspective: 1000;
 
   img {
-    border-radius: 5px 5px 0 0;
+    // border-radius: 5px 5px 0 0;
     height: 50%;
     width: 100%;
-    filter: blur(10px);
+    filter: grayscale(100%);
     transition: all .25s ease-in-out;
 
-    &:hover {
-      filter: blur(0px);
-    }
+    // &:hover {
+    //   filter: grayscale(0%);
+    //   border: 3px solid $highlight;
+      
+    // }
+  }
+  &:hover {
+     img {
+       filter: grayscale(0%)
+     }
+    //  transform: scale(1.02);
+     border: 3px solid $highlight;
   }
   
   &__tech {
