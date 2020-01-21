@@ -5,6 +5,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 const About = function() {
   return (
     <article className="section about" id="about">
+
       <p className="bio">Welcome, I am a full-stack developer, and a Robertson Davies aficionado. I have a perfectly healthy love for board and card games.</p>
       <CSSTransitionGroup
         transitionName="slide"
