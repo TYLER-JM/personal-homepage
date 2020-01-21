@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/projectCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faWindowRestore } from '@fortawesome/free-solid-svg-icons';
 
 
 const ProjectCard = function ({ title, tech, desc, source, src, live}) {
