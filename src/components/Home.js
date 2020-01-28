@@ -8,6 +8,7 @@ import Posts from './Posts';
 // import Footer from './Footer';
 // import UC from './UnderConstruction';
 import '../styles/home.scss';
+import Skills from './Skills';
 // import ContentList from './ContentList';
 // import ArticleListItem from './ArticleListItem';
 
@@ -19,6 +20,7 @@ export default function() {
       <About />
       <Projects />
       <Posts />
+      <Skills />
       <Contact />
       {/* <Footer /> */}
       {/* <ContentList /> */}
