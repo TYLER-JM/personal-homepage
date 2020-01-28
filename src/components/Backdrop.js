@@ -4,7 +4,7 @@ import "../styles/backdrop.scss";
 const Backdrop = function() {
   return (
     <div className="backdrop">
-      <img src="images/backdrop-cropped.jpg" alt="backdrop depiction of me"/>
+      <img src="images/backdrop-cropped.jpg" alt="abstract background"/>
     </div>
   )
 }
