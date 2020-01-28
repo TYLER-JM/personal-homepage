@@ -124,7 +124,6 @@
 }
 
 .contact {
-  // background-color: $background;
   background-color: white;
   color: black;
   display: flex;
@@ -139,6 +138,35 @@
       height: 50px;
       width: 50px;
     }
+  }
+}
+
+.skills {
+  background-color: white;
+  .logos {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    &__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 400px;
+    }
+  }
+  img {
+    height: 50px;
+    margin-top: 1em;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+  .fix-width {
+    display: flex;
+    justify-content: center;
   }
 }
 .footer {
