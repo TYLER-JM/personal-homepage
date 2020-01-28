@@ -16,10 +16,9 @@ const ProjectCard = function ({ title, tech, desc, source, src, live}) {
           <div className="card__title">{title}</div>
           <p className="card__tech">{tech}</p>
           <p className="card__text">{desc}</p>
-          <a className="card__link" href={source} target="blank">
+          <a className="card__link source-code" href={source} target="blank">
             <FontAwesomeIcon icon={faCode} />
           </a>
-          {/* { live && <a className="card__link" href={live} target="blank"><FontAwesomeIcon icon={faWindowRestore}/></a>} */}
         </div>
       </div>
     // </a>

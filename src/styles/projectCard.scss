@@ -3,23 +3,15 @@
 * {
   box-sizing: border-box;
 }
-
-.card__link {
-  text-decoration: none;
-  // text-transform: uppercase;
-  // margin: 15px;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  opacity: 1;
-  // text-align: center;
-    &:visited {
-      color: black;
-      text-transform: uppercase;
-    }
-    &:hover {
-      filter: grayscale(0%);
-    }
+@keyframes fadein {
+  from {
+    opacity: 0;
+    letter-spacing: -10px;
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 5px;
+  }
 }
 
 .card {
@@ -50,11 +42,6 @@
     filter: grayscale(100%);
     transition: all .25s ease-in-out;
 
-    // &:hover {
-    //   filter: grayscale(0%);
-    //   border: 3px solid $highlight;
-      
-    // }
   }
   &:hover {
      img {
@@ -70,6 +57,20 @@
     font-weight: 700;
   }
 
+  &__link {
+    text-decoration: none;
+    // margin: 15px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1;
+    &:visited {
+      color: black;
+      text-transform: uppercase;
+    }
+    
+  }
+
   
   &__title {
     font-family: 'DM Serif Display', serif;
@@ -78,6 +79,22 @@
     margin: 0 8px 0 0;
     font-weight: 700;
     
+  }
+
+  .source-code {
+    &:hover {
+      filter: grayscale(0%);
+      &:after {
+        content: "Source Code";
+        position: absolute;
+        width: max-content;
+        padding-left: 0.3em;
+        animation-name: fadein;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        letter-spacing: 5px;
+      }
+    }
   }
   
   @media (max-width: 700px) {
