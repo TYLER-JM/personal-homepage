@@ -38,12 +38,10 @@ const Navbar = function() {
     <nav className="menu" id="menu">
       <img className="hero" src="images/logo.png" alt="a logo depicting a guitar player"></img>
       <ul>
-        {/* <li><a href="#projects">Projects</a></li> */}
         <li onClick={() => scrollTo(750)}>Projects</li>
-        {/* <li><a href="#posts">Posts</a></li> */}
         <li onClick={() => scrollTo(1230)}>Posts</li>
-        {/* <li><a href="#contact">Contact</a></li> */}
-        <li onClick={() => scrollTo(1330)}>Contact</li>
+        <li onClick={() => scrollTo(1615)}>Skills</li>
+        <li onClick={() => scrollTo(1700)}>Contact</li>
       </ul>
     </nav>
   )

@@ -146,13 +146,15 @@
   .logos {
     height: 400px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: start;
     &__column {
       display: flex;
       flex-direction: column;
       justify-content: start;
-      height: 400px;
+      // height: 400px;
+      margin-left: 1em;
     }
   }
   img {
