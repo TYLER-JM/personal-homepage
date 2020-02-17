@@ -56,8 +56,8 @@
   align-items: center;
   .title {
     width: 100vw;
-    font-family: 'DM Serif Display', serif;
-    font-size: 2em;
+    font-family: 'Kulim Park', sans-serif;
+    text-transform: uppercase;
   }
   a {
     text-decoration: none;
@@ -148,11 +148,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     &__column {
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: flex-start;
       // height: 400px;
       margin-left: 1em;
     }
