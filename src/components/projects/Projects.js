@@ -7,15 +7,15 @@ const Projects = function() {
     {
       title: "Stuvv",
       tech: "React, Ruby on Rails, PostgreSQL",
-      desc: "Rent out your stuff, why not?",
+      desc: "A marketplace where users can rent out their stuff, or rent stuff from other users.",
       source: "https://github.com/TYLER-JM/stuvv-react-frontend",
       src: "stuvv-img.png",
       live: "https://stuvv.netlify.com"
     },
     {
       title: "Scheduler",
-      tech: "React, Storybook, Jest, Cypress",
-      desc: "Schedule interview appointments",
+      tech: "React, Storybook, Jest, Cypress, WebSockets",
+      desc: "View, and schedule interview appointments.",
       source: "https://github.com/TYLER-JM/scheduler",
       src: "adding.png",
       live: "https://adoring-wiles-39556f.netlify.com"
@@ -23,7 +23,7 @@ const Projects = function() {
     {
       title: "Toodleedoo",
       tech: "Express, EJS, PostgreSQL, Sass, Bootstrap, Google APIs",
-      desc: "A 'smart' To-Do List, leveraging third-party APIs to sort tasks",
+      desc: "A 'smart' To-Do List, leveraging third-party APIs to sort tasks automatically.",
       source: "https://github.com/TYLER-JM/toodleedoo",
       src: "home-page.png",
       live: "https://toodleedoo.com/landing"
@@ -31,7 +31,7 @@ const Projects = function() {
     {
       title: "Tweeter",
       tech: "Express, AJAX, jQuery, CSS",
-      desc: "A twitter clone, focusing on front-end, responsive design",
+      desc: "A twitter clone, focusing on front-end, responsive design.",
       source: "https://github.com/TYLER-JM/tweeter",
       src: "under-1024.png",
       live: false
@@ -39,7 +39,7 @@ const Projects = function() {
     {
       title: "Bar Chart",
       tech: "jQuery, HTML, CSS",
-      desc: "An API to generate bar charts on a web page",
+      desc: "An API to generate bar charts on a web page.",
       source: "https://github.com/TYLER-JM/barChart_repo",
       src: "example-barChart2.png",
       live: false
