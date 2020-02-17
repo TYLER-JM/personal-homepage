@@ -9,7 +9,8 @@ const Posts = function() {
           <div>
             <img src="../../images/mvc.png" alt="web frame work"/>
           </div>
-            <p>Web Frameworks and MVC architecture</p>
+            <p className="post-card__title">Web Frameworks and MVC architecture</p>
+            <p className="post-card__description">Object-relational mapping (ORM), as the name implies, is a way for an object-oriented programming language…</p>
         </div>
       </a>
       <a href="https://medium.com/@rufustheblog/so-you-want-to-use-an-orm-with-javascript-3895f9d437e6">
@@ -17,7 +18,8 @@ const Posts = function() {
           <div>
             <img src="../../images/sequelizejs.png" alt="Sequelize logo"/>
           </div>
-          <p>learning the Sequelize ORM for Javascript</p>
+          <p className="post-card__title">Learning the Sequelize ORM for Javascript</p>
+          <p className="post-card__description">Lets learn about Web Frameworks. Before we can get into the details of individual frameworks, we need to understand…</p>
         </div>
       </a>
     </article>
