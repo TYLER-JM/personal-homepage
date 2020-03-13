@@ -157,16 +157,14 @@
 .skills {
   background-color: white;
   .logos {
-    height: 400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     &__column {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      // height: 400px;
       margin-left: 1em;
     }
   }
