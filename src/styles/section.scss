@@ -1,6 +1,19 @@
 @import './palette.scss';
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .section {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
   height: 26em;
   // height: 90vh;
   width: 100vw;
