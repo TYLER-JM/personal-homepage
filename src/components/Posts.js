@@ -2,11 +2,6 @@ import React from 'react';
 
 const Posts = function() {
 
-  const screenWidth = () => {
-    const width =  window.innerWidth
-    console.log(width);
-  }
-  screenWidth();
   return (
     <article className="section posts" id="posts">
       <h2 className="title">Posts</h2>
