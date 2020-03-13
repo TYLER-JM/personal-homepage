@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import generateID from '../Helpers/generateId';
 import { CSSTransitionGroup } from 'react-transition-group';
 
 const About = function() {
+
+  useEffect(() => {
+    return () => {
+      console.log('im affecting change');
+    }
+  }, [])
+
   return (
     <article className="section about" id="about">
 
