@@ -18,6 +18,8 @@
 
 :root {
   font-size: calc(0.5em + 1vw);
+  background: linear-gradient(192deg, #5296a5, #82ddf0);
+  background-size: 400% 400%;
 }
 
 * {
@@ -25,10 +27,9 @@
 }
 .container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   color: rgb(215, 218, 218);
-  background: linear-gradient(192deg, #5296a5, #82ddf0);
-  background-size: 400% 400%;
+ 
   -webkit-animation: AnimationName 37s ease infinite;
   -moz-animation: AnimationName 37s ease infinite;
   animation: AnimationName 37s ease infinite;

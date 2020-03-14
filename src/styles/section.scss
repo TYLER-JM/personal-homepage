@@ -124,16 +124,19 @@
   .scroll-me {
     z-index: -1;
     display: flex;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     height: 24.5em;
- 
+    flex-flow: wrap;
+    justify-content: center;
   }
 }
 
 .contact {
-  // background-color: white;
-  color: black;
+  color: $background;
+  a {
+    color: $background;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,7 +153,6 @@
 }
 
 .skills {
-  // background-color: white;
   .logos {
     display: flex;
     flex-wrap: wrap;
