@@ -9,7 +9,6 @@ const Navbar = (props) => {
       <ul>
         <li onClick={ (e) => props.setView(e.target.innerHTML) }>About</li>
         <li onClick={ (e) => props.setView(e.target.innerHTML) }>Projects</li>
-        <li onClick={ (e) => props.setView(e.target.innerHTML) }>Posts</li>
         <li onClick={ (e) => props.setView(e.target.innerHTML) }>Skills</li>
         <li onClick={ (e) => props.setView(e.target.innerHTML) }>Contact</li>
       </ul>
