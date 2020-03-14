@@ -8,8 +8,6 @@ This is an **ongoing** project that serves as my personal portfolio. Right now i
 
 You can view the page [here](https://tylermartin.netlify.com/). The project is deployed using netlify.
 
-*the github and linkedin logo are courtesy of [Icons8](https://icons8.com)*
-
 
 
 
