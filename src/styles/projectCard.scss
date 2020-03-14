@@ -15,41 +15,37 @@
 }
 
 .card {
-  background-color: white;
   color: $background;
   border-radius: 5px;
-  border: 3px solid rgba(255,255,255,.0);
+  // border: 3px solid rgba(255,255,255,.0);
   transition: all .25s ease-in-out;
   z-index: 1;
-  float: left;
   position: relative;
   width: calc(100% * .3333 + .3333 * 40px);
-  width: 100%;
+  // width: 100%;
   min-width: 300px;
-  // width: 20em;
   height: 24.5em;
-  margin: 0 15px;
-  // perspective: 1000;
+  margin: 2rem;
   a {
     z-index: 100;
     font-size: 1rem;
   }
 
   img {
-    // border-radius: 5px 5px 0 0;
     height: 50%;
     width: 100%;
     filter: grayscale(100%);
     transition: all .25s ease-in-out;
-
+    &:hover {
+      filter: grayscale(0%);
+      transform: scale(1.02);
+    }
   }
-  &:hover {
-     img {
-       filter: grayscale(0%)
-     }
-    //  transform: scale(1.02);
-     border: 3px solid $highlight;
-  }
+  // &:hover {
+  //    img {
+       
+  //    }
+  // }
 
   &__content {
     margin: 0 .25em;

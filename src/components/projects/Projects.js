@@ -62,7 +62,6 @@ const Projects = function() {
 
   return (
     <article className="section projects" id="projects">
-      <h2>Projects</h2>
 
       <div className="scroll-me">
         {/* <ul className="card-list"> */}
