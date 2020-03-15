@@ -150,11 +150,30 @@
   div {
     display: flex;
     flex-direction: column;
+    margin-right: 0.4rem;
   }
   .social {
     svg {
       height: 50px;
       width: 50px;
+    }
+  }
+  .linkedin {
+    transition: color 1s;
+    &:hover {
+      color: #0077b5;
+    }
+  }
+  .mail {
+    transition: color 1s;
+    &:hover {
+      color: #cc3429;
+    }
+  }
+  .github {
+    transition: color 1s;
+    &:hover {
+      color: #24292e;
     }
   }
 }
