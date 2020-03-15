@@ -1,0 +1,27 @@
+.skills {
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    &__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: 1em;
+    }
+  }
+  img {
+    height: 50px;
+    margin-top: 1em;
+    filter: grayscale(30%);
+    transition: filter 0.3s;
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+  .fix-width {
+    display: flex;
+    justify-content: center;
+  }
+}

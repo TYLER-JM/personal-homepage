@@ -1,0 +1,35 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  text-align: right;
+  .bio {
+    font-size: 2em;
+    padding: 10px;
+    font-family: $dm;
+  }
+  &__container {
+    max-width: calc(35rem + 1vw);;
+  }
+  span {
+    width: 50%;
+  }
+  .name {
+    margin: 0;
+    font-family: $kulim;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 25px;
+    text-align: right;
+  }
+}
