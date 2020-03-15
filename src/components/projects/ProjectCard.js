@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/projectCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 

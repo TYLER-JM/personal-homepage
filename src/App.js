@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import Projects from './components/projects/Projects';
 import About from './components/About';
-import './styles/app.scss';
 import Skills from './components/Skills';
 
 function App() {

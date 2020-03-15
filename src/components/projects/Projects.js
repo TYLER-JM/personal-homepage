@@ -55,10 +55,8 @@ const Projects = function() {
   return (
     <article className="section projects" id="projects">
 
-      <div className="scroll-me">
-        {/* <ul className="card-list"> */}
+      <div className="projects__container">
           {allProjectCards}
-        {/* </ul> */}
       </div>
     </article>
   );

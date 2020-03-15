@@ -1,16 +1,13 @@
-@import './palette.scss';
+.projects {
+  font-family: $kulim;
 
-* {
-  box-sizing: border-box;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-    letter-spacing: -5px;
-  }
-  to {
-    opacity: 1;
-    letter-spacing: 5px;
+  &__container {
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 24.5em;
+    flex-flow: wrap;
+    justify-content: center;
   }
 }
 
