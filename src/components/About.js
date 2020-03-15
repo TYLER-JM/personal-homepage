@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import generateID from '../Helpers/generateId';
-import '../styles/about.scss';
 
 const About = function() {
 
