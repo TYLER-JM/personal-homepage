@@ -194,7 +194,7 @@
   img {
     height: 50px;
     margin-top: 1em;
-    filter: grayscale(100%);
+    filter: grayscale(30%);
     transition: filter 0.3s;
     &:hover {
       filter: grayscale(0%);
