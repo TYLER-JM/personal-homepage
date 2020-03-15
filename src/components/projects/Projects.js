@@ -36,14 +36,6 @@ const Projects = function() {
       src: "under-1024.png",
       live: false
     },
-    {
-      title: "Bar Chart",
-      tech: "jQuery, HTML, CSS",
-      desc: "An API to generate bar charts on a web page.",
-      source: "https://github.com/TYLER-JM/barChart_repo",
-      src: "example-barChart2.png",
-      live: false
-    }
   ]
 
   const allProjectCards = projects.map(project => {
