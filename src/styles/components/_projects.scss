@@ -1,5 +1,5 @@
 .projects {
-  font-family: $kulim;
+  font-family: $playfair;
 
   &__container {
     z-index: -1;
@@ -38,13 +38,17 @@
   }
 
   &__content {
-    margin: 0 .25em;
+    margin: 0 .25rem;
   }
   
   &__tech {
     font-size: 1em;
     line-height: 0.9;
     font-weight: 700;
+    padding: .5rem 0;
+  }
+  &__text {
+    padding: .5rem 0;
   }
 
   &__link {
@@ -59,7 +63,7 @@
   }
 
   &__title {
-    font-family: 'DM Serif Display', serif;
+    font-family: $kulim;
     text-transform: capitalize;
     font-size: 2em;
     margin: 0 8px 0 0;

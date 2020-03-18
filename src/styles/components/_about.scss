@@ -16,7 +16,8 @@
   .bio {
     font-size: 2em;
     padding: 10px;
-    font-family: $dm;
+    font-family: $playfair;
+    font-weight: 700;
   }
   &__container {
     max-width: calc(35rem + 1vw);;
