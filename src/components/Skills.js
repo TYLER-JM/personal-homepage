@@ -16,6 +16,7 @@ const Skills = function() {
           <img src="images/node.png" alt="node logo" />
           <img src="images/jquery.gif" alt="jQuery logo" />
           <img src="images/react.png" alt="React logo" />
+          <img src="images/vue-js.png" alt="Vue.js logo" />
         </div>
         <div className="logos__column">
           <img src="images/ruby.png" alt="Ruby logo" />
@@ -23,6 +24,9 @@ const Skills = function() {
         </div>
         <div className="logos__column">
           <img src="images/php.png" alt="PHP logo" />
+          <div className="fix-width">
+            <img src="images/codeigniter.png" alt="Codeigniter logo" />
+          </div>
         </div>
         <div className="logos__column">
           <div className="fix-width">
