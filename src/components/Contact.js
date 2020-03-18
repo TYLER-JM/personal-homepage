@@ -14,7 +14,7 @@ const Contact = function() {
         <a className="social linkedin" href="https://www.linkedin.com/in/tyler-martin-670020198/" target="blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a className="social mail" href="mailto:tyler.j.a.martin@gmail.com" target="_blank">
+        <a className="social mail" href="mailto:tyler.j.a.martin@gmail.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>
