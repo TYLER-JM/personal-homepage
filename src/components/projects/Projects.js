@@ -29,6 +29,14 @@ const Projects = function() {
       live: "https://toodleedoo.com/landing"
     },
     {
+      title: "Davies Base",
+      tech: "Vue, CSS, Webpack, PHP (Codeigniter), MySQL",
+      desc: "A searchable database of characters from the novels of Robertson Davies.",
+      source: "https://github.com/TYLER-JM/davies_vue",
+      src: "current_implementation.gif",
+      live: false
+    },
+    {
       title: "Tweeter",
       tech: "Express, AJAX, jQuery, CSS",
       desc: "A twitter clone, focusing on front-end, responsive design.",
