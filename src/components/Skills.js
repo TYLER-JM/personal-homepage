@@ -27,6 +27,9 @@ const Skills = function() {
           <div className="fix-width">
             <img src="images/codeigniter.png" alt="Codeigniter logo" />
           </div>
+          <div className="fix-width">
+            <img src="images/Laravel.png" alt="Laravel logo" />
+          </div>
         </div>
         <div className="logos__column">
           <div className="fix-width">

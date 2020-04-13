@@ -10,7 +10,10 @@ const About = function() {
         <h1 className="name" key={generateID(8)}>Tyler</h1>
         <h1 className="name" key={generateID(8)}>Martin</h1>
         <p className="bio">
-          Hello visitor. I am a full-stack developer, and a Robertson Davies aficionado. I have a perfectly healthy love for board and card games.
+          Hello visitor. I am a full-stack developer, and a Robertson Davies aficionado, I have a perfectly healthy love for board and card games.
+        </p>
+        <p className="bio">
+          I'm currently working at <a href="https://getguild.co/" target="blank"><span>Guild</span></a> using Laravel, jQuery, and VueJS. 
         </p>
       </div>
     </article>

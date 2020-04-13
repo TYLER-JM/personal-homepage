@@ -18,6 +18,23 @@
     padding: 10px;
     font-family: $playfair;
     font-weight: 700;
+    a {
+      text-decoration: none;
+      color: #303641;
+      // filter: grayscale(30%);
+      transition: all 0.3s;
+      span:hover {
+        color: black;
+      }
+    }
+    // a:hover {
+    //   color: black;
+    // }
+    a:visited {
+      text-decoration: none;
+      // filter: grayscale(30%);
+      color: #303641;
+    }
   }
   &__container {
     max-width: calc(35rem + 1vw);;
