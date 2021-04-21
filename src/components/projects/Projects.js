@@ -36,14 +36,14 @@ const Projects = function() {
       src: "current_implementation.gif",
       live: false
     },
-    {
-      title: "Tweeter",
-      tech: "Express, AJAX, jQuery, CSS",
-      desc: "A twitter clone, focusing on front-end, responsive design.",
-      source: "https://github.com/TYLER-JM/tweeter",
-      src: "under-1024.png",
-      live: false
-    },
+    // {
+    //   title: "Tweeter",
+    //   tech: "Express, AJAX, jQuery, CSS",
+    //   desc: "A twitter clone, focusing on front-end, responsive design.",
+    //   source: "https://github.com/TYLER-JM/tweeter",
+    //   src: "under-1024.png",
+    //   live: false
+    // },
   ]
 
   const allProjectCards = projects.map(project => {
