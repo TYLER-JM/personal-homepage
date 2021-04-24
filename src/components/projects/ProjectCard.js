@@ -20,8 +20,6 @@ const ProjectCard = function ({ title, tech, desc, source, src, live}) {
           </a>
         </div>
       </div>
-    // </a>
-
     
   )
 
