@@ -6,10 +6,12 @@ const About = function() {
   let classes = 'section about'
   return (
     <article className={classes} id="about">
-      <img className="hero" src="images/logo.png" alt="a logo depicting a guitar player"></img>
       <div className="about__container">
-        <h1 className="name" key={generateID(8)}>Tyler</h1>
-        <h1 className="name" key={generateID(8)}>Martin</h1>
+        <div className="hero">
+          <img src="images/logo.png" alt="a logo depicting a guitar player"></img>
+          <h1 className="name name__first" key={generateID(8)}> Tyler</h1>
+          <h1 className="name" key={generateID(8)}>Martin</h1>
+        </div>
         <p className="bio">
           Hello visitor. I am a full-stack developer, and a Robertson Davies aficionado, I have a perfectly healthy love for board and card games.
         </p>

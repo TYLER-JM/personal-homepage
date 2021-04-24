@@ -12,7 +12,30 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 2em;
-  text-align: right;
+  text-align: justify;
+  .hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      margin: 1em 0;
+      height: 6.25em;
+      width: 6.25em;
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    .name {
+      margin: 0;
+      font-family: $kulim;
+      text-transform: uppercase;
+      font-size: 2rem;
+      letter-spacing: calc(1rem + 1vw);
+      &__first {
+        text-indent: calc(1rem + 1vw);
+      }
+    }
+  }
   .bio {
     font-size: 2em;
     padding: 10px;
@@ -38,16 +61,12 @@
   }
   &__container {
     max-width: calc(35rem + 1vw);;
+    border: 4px #303641 solid;
+    @media (max-width: 800px) {
+      max-width: calc(25rem + 1vw);
+    }
   }
   span {
     width: 50%;
-  }
-  .name {
-    margin: 0;
-    font-family: $kulim;
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 25px;
-    text-align: right;
   }
 }
