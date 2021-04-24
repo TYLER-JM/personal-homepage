@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import Projects from './components/projects/Projects';
 import About from './components/About';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
 
 function App() {
 
@@ -14,7 +14,6 @@ function App() {
       <Navbar setView={setView}/>
       { view === 'About' && <About /> }
       { view === 'Projects' && <Projects /> }
-      { view === 'Skills' && <Skills /> }
       { view === 'Contact' && <Contact /> }
     </div>
   )
