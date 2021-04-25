@@ -18,7 +18,7 @@ const Contact = function() {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
-        <p>I'm always happy to chat about my code, the books I'm reading, games I'm playing, or music I'm listening to.</p>
+        <p>Reach out. I'm always happy to chat about my code, the books I'm reading, games I'm playing, or music I'm listening to.</p>
       </div>
     </article>
   )

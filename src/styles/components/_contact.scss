@@ -1,8 +1,4 @@
 .contact {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-evenly;
-  // align-items: center;
   a {
     color: $background;
   }
@@ -16,6 +12,7 @@
   }
   .social {
     transition: color 1s;
+    padding: calc(0.2rem + 1vw) 0 0 0;
     svg {
       height: 50px;
       width: 50px;
@@ -42,19 +39,15 @@
     margin-right: 0.4rem;
     max-width: calc(35rem + 1vw);;
     border: 4px #303641 solid;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
     @media (max-width: 800px) {
       max-width: calc(25rem + 1vw);
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .contact {
-    flex-direction: column;
-    div {
-      flex-direction: row;
-      justify-content: space-evenly;
-      width: 100%;
     }
   }
 }
