@@ -13,38 +13,33 @@
     font-family: $playfair;
     max-width: 40rem;
     margin: 0;
-    // text-align: right;
-  }
-  div {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0.4rem;
   }
   .social {
+    transition: color 1s;
     svg {
       height: 50px;
       width: 50px;
     }
   }
   .linkedin {
-    transition: color 1s;
     &:hover {
       color: #0077b5;
     }
   }
   .mail {
-    transition: color 1s;
     &:hover {
       color: #cc3429;
     }
   }
   .github {
-    transition: color 1s;
     &:hover {
       color: #24292e;
     }
   }
   &__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.4rem;
     max-width: calc(35rem + 1vw);;
     border: 4px #303641 solid;
     @media (max-width: 800px) {
