@@ -20,10 +20,11 @@
     text-transform: uppercase;
     position: relative;
     color: white;
+    padding: 0 calc(0.1rem + 1vw);
     letter-spacing: 0;
     cursor: pointer;
     &:hover,&:active {
-      letter-spacing: 5px; 
+      letter-spacing: 5px;
       color: $background;     
     }
     
