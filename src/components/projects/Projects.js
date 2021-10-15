@@ -18,7 +18,8 @@ const Projects = function() {
       desc: "View, and schedule interview appointments.",
       source: "https://github.com/TYLER-JM/scheduler",
       src: "adding.png",
-      live: "https://adoring-wiles-39556f.netlify.com"
+      // live: "https://adoring-wiles-39556f.netlify.com"
+      live: false
     },
     {
       title: "Toodleedoo",
@@ -26,7 +27,8 @@ const Projects = function() {
       desc: "A 'smart' To-Do List, leveraging third-party APIs to sort tasks automatically.",
       source: "https://github.com/TYLER-JM/toodleedoo",
       src: "home-page.png",
-      live: "https://toodleedoo.com/landing"
+      // live: "https://toodleedoo.com/landing"
+      live: false
     },
     {
       title: "Davies Base",
