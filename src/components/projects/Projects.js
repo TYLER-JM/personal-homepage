@@ -10,7 +10,8 @@ const Projects = function() {
       desc: "A marketplace where users can rent out their stuff, or rent stuff from other users.",
       source: "https://github.com/TYLER-JM/stuvv-react-frontend",
       src: "stuvv-img.png",
-      live: "https://stuvv.netlify.com"
+      // live: "https://stuvv.netlify.com"
+      live: false
     },
     {
       title: "Scheduler",

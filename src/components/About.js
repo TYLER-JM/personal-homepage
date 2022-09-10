@@ -16,7 +16,7 @@ const About = function() {
           Hello visitor. I am a full-stack developer, and a Robertson Davies aficionado, I have a perfectly healthy love for board and card games.
         </p>
         <p className="bio">
-          I'm currently working at <a href="https://getguild.co/" target="blank"><span>Guild</span></a> using Laravel, jQuery, and VueJS. 
+          I'm currently working at <a href="https://www.mindgeek.com/" target="blank"><span>MindGeek Canada</span></a> using Symphony, Docker, and StimulusJS. 
         </p>
       </div>
     </article>
