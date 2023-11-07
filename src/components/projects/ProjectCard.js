@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowsAlt, faCode, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faLink } from '@fortawesome/free-solid-svg-icons';
 
 
 const ProjectCard = function ({ title, tech, desc, source, src, live}) {
