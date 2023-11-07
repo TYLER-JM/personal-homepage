@@ -13,10 +13,10 @@ const About = function() {
           <h1 className="name" key={generateID(8)}>Martin</h1>
         </div>
         <p className="bio">
-          Hello visitor. I am a full-stack developer, and a Robertson Davies aficionado, I have a perfectly healthy love for board and card games.
+          Hello <span role='img' aria-label='waving-hand'>👋</span>. I am a web developer, and a Robertson Davies aficionado. I have a perfectly healthy love for board and card games.
         </p>
         <p className="bio">
-          I'm currently working at <a href="https://www.mindgeek.com/" target="blank"><span>MindGeek Canada</span></a> using Symphony, Docker, and StimulusJS. 
+          I'm working at <a href="https://www.aylo.com/" target="blank"><span>Aylo</span></a> as a Front End Developer. I use StimulusJS, Bootstrap, and Sass to create maintainable user interfaces. 
         </p>
       </div>
     </article>

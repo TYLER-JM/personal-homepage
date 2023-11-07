@@ -5,30 +5,18 @@ import generateId from '../../Helpers/generateId';
 const Projects = function() {
   const projects = [
     {
+      title: "Team Fantasy",
+      tech: "React, NextJS, Prisma, SupaBase",
+      desc: "A platform to track and manage a team-based fantasy sports league. Using NextJS, and deployed with Vercel",
+      source: "https://github.com/TYLER-JM/team-fantasy-v2",
+      live: "https://team-fantasy-v2.vercel.app/"
+    },
+    {
       title: "Stuvv",
       tech: "React, Ruby on Rails, PostgreSQL",
-      desc: "A marketplace where users can rent out their stuff, or rent stuff from other users.",
+      desc: "This was a project from web dev bootcamp; a marketplace where users can rent out their stuff, or rent stuff from other users.",
       source: "https://github.com/TYLER-JM/stuvv-react-frontend",
       src: "stuvv-img.png",
-      // live: "https://stuvv.netlify.com"
-      live: false
-    },
-    {
-      title: "Scheduler",
-      tech: "React, Storybook, Jest, Cypress, WebSockets",
-      desc: "View, and schedule interview appointments.",
-      source: "https://github.com/TYLER-JM/scheduler",
-      src: "adding.png",
-      // live: "https://adoring-wiles-39556f.netlify.com"
-      live: false
-    },
-    {
-      title: "Toodleedoo",
-      tech: "Express, EJS, PostgreSQL, Sass, Bootstrap, Google APIs",
-      desc: "A 'smart' To-Do List, leveraging third-party APIs to sort tasks automatically.",
-      source: "https://github.com/TYLER-JM/toodleedoo",
-      src: "home-page.png",
-      // live: "https://toodleedoo.com/landing"
       live: false
     },
     {
@@ -39,14 +27,6 @@ const Projects = function() {
       src: "current_implementation.gif",
       live: false
     },
-    // {
-    //   title: "Tweeter",
-    //   tech: "Express, AJAX, jQuery, CSS",
-    //   desc: "A twitter clone, focusing on front-end, responsive design.",
-    //   source: "https://github.com/TYLER-JM/tweeter",
-    //   src: "under-1024.png",
-    //   live: false
-    // },
   ]
 
   const allProjectCards = projects.map(project => {

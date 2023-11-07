@@ -7,7 +7,7 @@ const Contact = function() {
   return (
     <article className="section contact" id="contact">
       <div className="contact__container">
-        <div>
+        <div className='contact__social'>
           <a className="social github" href="https://github.com/TYLER-JM" target="blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -18,7 +18,7 @@ const Contact = function() {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
-        <p>Reach out. I'm always happy to chat about my code, the books I'm reading, games I'm playing, or music I'm listening to.</p>
+        <p>I'm always happy to chat about what I'm working on, what I'm reading, what I'm playing, or what I'm listening to.</p>
       </div>
     </article>
   )
