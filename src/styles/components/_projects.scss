@@ -2,12 +2,12 @@
   font-family: $playfair;
 
   &__container {
-    z-index: -1;
-    display: flex;
-    width: 100%;
-    height: 24.5em;
-    flex-flow: wrap;
-    justify-content: center;
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: max-content;
+    grid-gap: 2em 2em;
   }
 }
 
@@ -15,37 +15,15 @@
   color: $background;
   border-radius: 5px;
   transition: all .25s ease-in-out;
-  z-index: 1;
   position: relative;
-  width: calc(100% * .3333 + .3333 * 40px);
-  min-width: 300px;
-  height: 24.5em;
-  margin: 2rem;
-  a {
-    z-index: 100;
-    font-size: 1rem;
-  }
-
-  img {
-    height: 50%;
-    width: 100%;
-    filter: grayscale(100%);
-    transition: all .25s ease-in-out;
-    &:hover {
-      filter: grayscale(0%);
-      transform: scale(1.02);
-    }
-  }
-
-  &__content {
-    margin: 0 .25rem;
-  }
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .3);
+  background-color: burlywood;
+  padding: 1rem;
   
   &__tech {
     font-size: 1em;
-    line-height: 0.9;
     font-weight: 700;
-    padding: .5rem 0;
+    padding-bottom: 1em;
   }
   &__text {
     padding: .5rem 0;
@@ -54,20 +32,24 @@
   &__link {
     text-decoration: none;
     display: inline-block;
-    margin: 0 auto;
     opacity: 1;
     &:visited {
       color: black;
       text-transform: uppercase;
     } 
+    &--live {
+      padding-right: .5em;
+      font-size: .75em;
+    }
   }
 
   &__title {
     font-family: $kulim;
-    text-transform: capitalize;
     font-size: 2em;
-    margin: 0 8px 0 0;
+    padding-bottom: 1em;
     font-weight: 700;
+    display: flex;
+    align-items: center;
   }
 
   .source-code {
@@ -79,7 +61,7 @@
         width: max-content;
         padding-left: 0.3em;
         animation-name: fadein;
-        animation-duration: 2s;
+        animation-duration: .5s;
         animation-iteration-count: 1;
         letter-spacing: 5px;
       }

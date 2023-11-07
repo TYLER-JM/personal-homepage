@@ -29,7 +29,7 @@
 }
 
 :root {
-  font-size: calc(0.5em + 1vw);
+  font-size: calc(0.25em + 1vw);
   background: linear-gradient(192deg, #5296a5, #82ddf0);
   background-size: 400% 400%;
 }
@@ -46,7 +46,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: justify;
   
   a {
     color: black;

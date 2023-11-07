@@ -1,17 +1,18 @@
 .contact {
+  &__social {
+    padding-bottom: 2em ;
+  }
   a {
     color: $background;
   }
   p {
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.5em;
     padding: 10px;
     font-family: $playfair;
-    max-width: 40rem;
     margin: 0;
   }
   .social {
-    transition: color 1s;
+    transition: color .5s;
     padding: calc(0.2rem + 1vw) 0 0 0;
     svg {
       height: 50px;
@@ -34,11 +35,14 @@
     }
   }
   &__container {
+    padding: 1em;
     display: flex;
+    color: $background;
     flex-direction: column;
-    margin-right: 0.4rem;
-    max-width: calc(35rem + 1vw);;
-    border: 4px #303641 solid;
+    max-width: calc(35rem + 1vw);
+    background-color: burlywood;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .3);
 
     div {
       display: flex;
@@ -47,7 +51,7 @@
       justify-content: space-evenly;
     }
     @media (max-width: 800px) {
-      max-width: calc(25rem + 1vw);
+      max-width: 80%;
     }
   }
 }
