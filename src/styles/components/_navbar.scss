@@ -14,18 +14,17 @@
     width: 6.25em;
   }
   li {
-    font-family: 'Kulim Park', sans-serif;
+    font-family:'Times New Roman', serif;
     transition: all 280ms ease-in-out;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-    color: white;
     padding: 0 calc(0.1rem + 1vw);
     letter-spacing: 0;
     cursor: pointer;
     &:hover,&:active {
       letter-spacing: 5px;
-      color: $background;     
+      color: black;     
     }
     
     &:after,&:before {

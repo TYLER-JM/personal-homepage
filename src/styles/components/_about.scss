@@ -22,34 +22,41 @@
       }
     }
     .name {
-      font-family: $kulim;
       text-transform: uppercase;
       font-size: 2rem;
       letter-spacing: calc(0.72rem + 1vw);
     }
   }
   .bio {
-    font-size: 2em;
-    padding: 10px;
-    font-family: $playfair;
-    font-weight: 700;
+    font-size: 1.75em;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+    border-left: 2px solid burlywood;
+    
+    font-weight: 300;
     a {
       text-decoration: none;
-      color: #303641;
+      
+      color: burlywood;
       transition: all 0.3s;
-      span:hover {
+      &:hover {
         color: black;
       }
     }
     a:visited {
       text-decoration: none;
-      color: #303641;
+      color: burlywood;
+      &:hover {
+        color: black;
+      }
     }
   }
   &__container {
     max-width: calc(35rem + 1vw);
     @media (max-width: 800px) {
-      max-width: 80%;
+      max-width: 90%;
     }
   }
   span {

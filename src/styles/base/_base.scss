@@ -30,8 +30,10 @@
 
 :root {
   font-size: calc(0.25em + 1vw);
-  background: linear-gradient(192deg, #5296a5, #82ddf0);
-  background-size: 400% 400%;
+  @media only screen and (max-width: 800px) {
+    font-size: calc(.5rem + 1vw);
+  }
+  background: linear-gradient(192deg, #fff, #eaeaea);
 }
 
 .section {
@@ -42,7 +44,6 @@
 
   grid-area: 2 / 1 / 3 / 2;
 
-  //moved from .about, and .contact
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +60,7 @@
 
   position: relative;
   min-height: 100vh;
-  color: rgb(215, 218, 218);
+  color: $dark-1;
   -webkit-animation: background-fade 37s ease infinite;
   -moz-animation: background-fade 37s ease infinite;
   animation: background-fade 37s ease infinite;

@@ -1,5 +1,6 @@
 import React from 'react';
 
+/*Not in use*/
 const Posts = function() {
 
   return (
