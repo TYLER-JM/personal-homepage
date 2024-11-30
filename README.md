@@ -6,7 +6,7 @@ This is an **ongoing** project that serves as my personal portfolio. Right now i
 
 ## Deployment
 
-You can view the page [here](https://tylermartin.netlify.com/). The project is deployed using netlify.
+You can view the page [here](https://tylermartin.netlify.app/). The project is deployed using netlify.
 
 
 
