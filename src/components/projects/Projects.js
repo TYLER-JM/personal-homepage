@@ -12,21 +12,12 @@ const Projects = function() {
       live: "https://team-fantasy-v2.vercel.app/"
     },
     {
-      title: "Stuvv",
-      tech: "React, Ruby on Rails, PostgreSQL",
-      desc: "This was a project from web dev bootcamp; a marketplace where users can rent out their stuff, or rent stuff from other users.",
-      source: "https://github.com/TYLER-JM/stuvv-react-frontend",
-      src: "stuvv-img.png",
-      live: false
-    },
-    {
-      title: "Davies Base",
-      tech: "Vue, CSS, Webpack, PHP (Codeigniter), MySQL",
-      desc: "A searchable database of characters from the novels of Robertson Davies.",
-      source: "https://github.com/TYLER-JM/davies_vue",
-      src: "current_implementation.gif",
-      live: false
-    },
+      title: "MoCalc",
+      tech: "Typescript, React, React Router",
+      desc: "a Mortgage calculator that lets you easily compare multiple mortgage scenarios.",
+      source: "https://github.com/TYLER-JM/mocalc",
+      live: "https://mocalc.vercel.app/"
+    }
   ]
 
   const allProjectCards = projects.map(project => {
